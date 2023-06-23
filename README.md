@@ -6,5 +6,6 @@ By Conducting this Mini Project, we gain valuable insights into the Healthcare I
 
 # Project Outputs
 
-![1 (6)](https://github.com/SURYA2745/Doctor_Visit_Analysis/assets/125201808/4d8fc723-fdf6-40d5-9408-5ce039903ece)
+![1 (6)](https://github.com/SURYA2745/Doctor_Visit_Analysis/assets/125201808/4d8fc723-fdf6-40d5-9408-5ce039903ece)   ![1 (5)](https://github.com/SURYA2745/Doctor_Visit_Analysis/assets/125201808/256033cc-0a2d-4be8-ab55-3749369715c7)
+
 

@@ -39,6 +39,35 @@ plt.ylabel('Visits')
 #Count and Visualize the no of males and females affected by illness 
 sns.histplot(df.gender,bins=2)
 
+#Visualize the Percentage of people getting Govt Health Insurance due to low income, 
+#due to old age and also the percentage of people having Private Health Insurance
+
+# % of people getting govt Insurance due to Low income
+label=['yes', 'no']
+Y = df[df['freepoor']=='yes']
+N = df[df['freepoor']=='no']
+x = [Y.shape[0],N.shape[0]]
+plt.figure(figsize=(5,5))
+plt.pie(x, labels=label)
+plt.title("% of people getting govt health Insurance due to low income ")
+plt.show()
+#% of people having private Insurance
+Y = df[df['private']=='yes']
+N = df[df['private']=='no']
+x = [Y.shape[0],N.shape[0]]
+plt.figure(figsize=(5,5))
+plt.pie(x, labels=label)
+plt.title("% of people having private health Insurance ")
+plt.show()
+#% of people getting govt Insurance due to old age, disability or veteran status
+Y = df[df['freerepat']=='yes'] 
+N = df[df['freerepat']=='no']
+x = [Y.shape[0],N.shape[0]]
+plt.figure(figsize=(5,5))
+plt.pie(x, labels=label)
+plt.title("% of people getting govt health Insurance due to old age, disability or veteran status")
+plt.show()
+
 #Plot a Horizontal Bar Chart to analyze the reduced days of activity due to illness based on gender
 db= df.groupby('gender')['reduced'].sum().to_frame().reset_index()
 #Creating the bar chart
